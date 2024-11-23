@@ -1,1 +1,1 @@
-# Gestor de Tareas Interactivo (DOM) sin flexbox
+# Gestor de Tareas Interactivo con Prioridad Alta y Baja (DOM) sin flexbox
