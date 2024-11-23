@@ -15,7 +15,8 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 40%;
+    padding: 2px;
+    width: 35%;
     height: 30%;
     text-align: center;
     margin: 40px auto;
@@ -25,6 +26,8 @@ body{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
 }
 .titulo{
+    width: 100%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,14 +40,11 @@ body{
     0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 
     0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 
     0 20px 20px rgba(0,0,0,0.15);
-    margin-bottom: 10px;
     margin-top: 10px;
 }
 .input-container {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-start; 
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .Seleccion {
@@ -57,7 +57,7 @@ body{
 }
 .inputLista{
     width: 300px;
-    height: 35px;
+    height: 45px;
     border-radius: 10px;
     border: 1px solid black;
     padding: 5px;
@@ -259,4 +259,37 @@ label input {
 }
 .fa-solid{
     color: black !important;
+}
+@media (max-width: 660px){
+    .contenedorTarea{
+        width: 60%;
+        height: 40%;
+        padding: 5px;
+    }
+    .titulo{
+        font-size: 20px;
+        height: 80px;
+        margin: auto;
+    }
+    .input-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        padding: 2px;
+    }
+    .inputLista{
+        width: 250px;
+        margin: auto;
+    }
+    .Seleccion{
+        gap: 1rem;
+    }
+    .ContenedorListas{
+        flex-direction: column;
+    }
+    .ContenedorAlto, .ContenedorBajo{
+        width: 90%;
+        height: 50%;
+    }
 }
